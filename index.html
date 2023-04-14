@@ -1,4 +1,4 @@
-<!DOCTYPE html public>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
@@ -12,22 +12,25 @@
     />
 
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/html-includer.js"></script>
 
     <title>GridLock Offline Traffic Simulator</title>
   </head>
 
   <body>
     <header>
-      <div id="MenuIcon">
-        <div id="MenuBar1"></div>
-        <div id="MenuBar2"></div>
-        <div id="MenuBar3"></div>
-      </div>
-      <img src="" alt="" />
+      <div w3-include-html="Html_Components/mainMenu.html"></div>
+
       <div>
-        <h1>GRIDLOCK</h1>
-        <h2>TRAFFIC SIMULATOR</h2>
+        <img src="" alt="" />
+
+        <div>
+          <h1>GRIDLOCK</h1>
+          <h2>TRAFFIC SIMULATOR</h2>
+        </div>
       </div>
+
+      <nav id="mapMenuOptions"></nav>
     </header>
 
     <section>
@@ -40,5 +43,9 @@
 
       <div id="mapOptions"></div>
     </section>
+
+    <script>
+      includeHTML();
+    </script>
   </body>
 </html>
